@@ -11,5 +11,6 @@ int cbinsearch(int *arr, int size, int value) {
       k = k + 1;
   }
   std::cout << "Count of wanted numbers in array:" << k;
-  return 0; // если ничего не найдено
+  if (k = 0)
+    return 0; // если ничего не найдено
 }
