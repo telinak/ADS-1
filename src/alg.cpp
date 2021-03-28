@@ -1,8 +1,7 @@
 // Copyright 2021 NNTU-CS
 #include <iostream>
-int cbinsearch(int *arr, int size, int value) {
+int cbinsearch(int arr, int size, int value) {
   int k = 0;
-  arr = new int [size];
   std::cin >> "Size of array:" >> size;
   for (int i = 0; i < size; ++i)
     std::cin >> arr[i];
