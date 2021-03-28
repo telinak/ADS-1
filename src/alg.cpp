@@ -2,10 +2,6 @@
 #include <iostream>
 int cbinsearch(int *arr, int size, int value) {
   int k = 0;
-  std::cin >> size;
-  for (int i = 0; i < size; ++i)
-    std::cin >> arr[i];
-  std::cin >> value;
   for (int i = 0; i < size; ++i) {
     if (arr[i] == value)
       k = k + 1;
