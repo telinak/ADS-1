@@ -1,5 +1,4 @@
 // Copyright 2021 NNTU-CS
-#include "stdafx.h"
 #include <iostream>
 int cbinsearch(int *arr, int size, int value) {
   int k = 0;
