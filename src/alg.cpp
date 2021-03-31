@@ -11,11 +11,7 @@ int cbinsearch(int *arr, int size, int value) {
         r = m - 1;
       } else {
         return m;
+      }
     }
-  }
-  if (arr[l] == value) {
     return l;
-  } else {
-    return -1;}
-}
-}
+  }
