@@ -2,7 +2,7 @@
 #include <iostream>
 int cbinsearch(int *arr, int size, int value) {
   int left = 0, right = size - 1, k = 0, middle;
-  if (arr[left] == arr [right] == value) {
+  if (arr[left] == arr[right] == value) {
     k = right;
     break;
   }
