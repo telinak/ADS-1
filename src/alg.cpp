@@ -1,9 +1,9 @@
 // Copyright 2021 NNTU-CS
 #include <iostream>
 int cbinsearch(int *arr, int size, int value) {
-  int l = 0, r = size - 1;
+  int l = 0, r = size - 1, m;
   while (r > l) {
-    int m = (l + r) / 2;
+    m = (l + r) / 2;
     if (arr[m] < value) {
       l = m + 1;
     } else {
