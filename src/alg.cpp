@@ -13,10 +13,9 @@ int cbinsearch(int *arr, int size, int value) {
     if (arr[middle] < value)
       left = middle + 1;
   }
-  last = first;
-  while ((arr[first] == value) || (first == 0))
+  while ((arr[first] == value) || (first != 0))
     first -= 1;
-  while ((arr[last] == value) || (last == size - 1))
+  while (arr[last] == value) || (last != size - 1))
     last += 1;
   count = last - first + 1;
   return count;
