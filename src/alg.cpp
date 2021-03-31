@@ -3,8 +3,14 @@ int cbinsearch(int *arr, int size, int value) {
   int left = 0, right = size - 1, middle;
   while (left <= right) {
     middle = (left + right) / 2;
-    if (arr[middle] == value) {
-      for (int i = middle; arr[i] == value; ++i) {
+    if (arr[middle] == value)
+      break;
+    if (arr[middle] > value)
+      right = middle - 1;
+    if (arr[middle] < value)
+      left = middle + 1;
+  }
+  for (int i = middle; arr[i] == value; ++i) {
         k = k + 1;
         if (i == size - 1)
           break;
@@ -14,11 +20,5 @@ int cbinsearch(int *arr, int size, int value) {
         if (j == 0)
           break;
       }
-    }
-    if (arr[middle] > value)
-      right = middle - 1;
-    if (arr[middle] < value)
-      left = middle + 1;
-  }
   return k;
 }
