@@ -2,6 +2,10 @@
 #include <iostream>
 int cbinsearch(int *arr, int size, int value) {
   int left = 0, right = size - 1, k = 0, middle;
+  if (arr[left] == arr [right] == value) {
+    k = right;
+    break;
+  }
   while (right > left) {
     middle = (left + right) / 2;
     if (arr[middle] == value) {
