@@ -10,6 +10,6 @@ int cbinsearch(int *arr, int size, int value) {
     m = (i + j) / 2;
   }
   if (i > j) return 0;
-  else 
+  else
     return m + 1;
 }
