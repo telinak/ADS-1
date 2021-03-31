@@ -13,12 +13,12 @@ int cbinsearch(int *arr, int size, int value) {
     if (arr[middle] < value)
       left = middle + 1;
   }
-  while (first != 0) {
-    if (arr[first] == value)
+  for (i = 0; first > 0; i++) {
+  if (arr[first] == value)
       first -= 1;
   }
-  while (last != size - 1) {
-    if (arr[last] == value)
+  for (i = 0; last < size; i++) {
+  if (arr[last] == value)
       last += 1;
   }
   count = last - first + 1;
